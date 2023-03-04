@@ -14,9 +14,7 @@ public class ConsumerRun {
     public static void main(String[] args) throws InterruptedException, IOException, TimeoutException {
 
 
-        System.out.println("---------------------------------------------------------");
         System.out.println("--------------------Process Begins-----------------------");
-        System.out.println("---------------------------------------------------------");
 
         ConnectionFactory factory = new ConnectionFactory();
 
