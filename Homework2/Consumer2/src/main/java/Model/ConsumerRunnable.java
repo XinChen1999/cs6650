@@ -33,7 +33,7 @@ public class ConsumerRunnable implements Runnable {
                 String swipee = messageParts[2];
                 String action = messageParts[0];
 
-                swipeesInfo.swipe(action, swiper, swipee);
+                likesInfo.swipe(action, swiper, swipee);
                 channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
 
             };

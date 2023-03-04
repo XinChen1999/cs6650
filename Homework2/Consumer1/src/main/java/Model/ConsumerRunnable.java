@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 public class ConsumerRunnable implements Runnable {
-    private final static String QUEUE_NAME = "HEYPOOL2";
+    private final static String QUEUE_NAME = "HEYPOOL1";
     private Connection connection;
     private LikesInfo likesInfo;
     private SwipeesInfo swipeesInfo;
