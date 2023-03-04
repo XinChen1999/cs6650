@@ -18,15 +18,14 @@ public class LikesInfo {
     }
 
     public void swipe(String action, String swiper, String swipee) {
-
-        if (action.equals("left")) {
-            dislikesCollection.put(swiper, dislikesCollection.getOrDefault(swiper, 0) + 1);
-        } else {
+        if (action.equals("right")) {
             likesCollection.put(swiper, likesCollection.getOrDefault(swiper, 0) + 1);
             if (!likedUsers.containsKey(swiper)) {
                 likedUsers.put(swiper, Collections.synchronizedList(new ArrayList<>()));
                 likedUsers.get(swiper).add(swipee);
             }
+        } else {
+            dislikesCollection.put(swiper, dislikesCollection.getOrDefault(swiper, 0) + 1);
         }
     }
 
